@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head> 
+<body>
+    
+        <div class="container">
+            <div class="input-holder">
+                <input id="input-box" type="text" placeholder="0" readonly>
+            </div>
+
+            <div class="btns">
+                <div class="row">
+                    <button id="ce" onclick="inputDelete()">CE</button>
+                    <button onclick="fact()">x!</button>
+                    <button class="btn">(</button>
+                    <button class="btn">)</button>
+                    <button class="btn">%</button>
+                    <button id="ac">AC</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="sin()">sin</button>
+                    <button onclick="pi()">π</button>
+                    <button class="btn">7</button>
+                    <button class="btn">8</button>
+                    <button class="btn">9</button>
+                    <button class="btn">÷</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="cos()">cos</button>
+                    <button onclick="log()">log</button>
+                    <button class="btn">4</button>
+                    <button class="btn">5</button>
+                    <button class="btn">6</button>
+                    <button class="btn">x</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="tan()">tan</button>
+                    <button onclick="sqrt()">√</button>
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn">-</button>
+                </div>
+
+                <div class="row">
+                    <button onclick="e()">e</button>
+                    <button onclick="pow()">x <span style="position: relative; bottom: .3em; right: .2em;">y</span> </button>
+                    <button class="btn">0</button>
+                    <button class="btn">.</button>
+                    <button id="eval" onclick="inputBox.value=eval(inputBox.value)">=</button>
+                    <button class="btn">+</button>
+                </div>
+            </div>
+        </div>
+     
+    <script src="js/script.js"></script>
+       
+</body>   
+</html>

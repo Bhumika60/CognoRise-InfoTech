@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    outline: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ecf0f3;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    background-image: url(/img/bg2.jpg);
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    opacity: 0.1;
+}
+
+.container {
+    background-color: #d7e7e5;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 10px 10px 20px #a9acaf,
+        -10px -10px 20px #ffffff;
+    z-index: 1;
+}
+
+button {
+    margin: 5px;
+    width: 70px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 6px;
+    box-shadow: 5px 6px 8px #1312122d,
+        -5px -6px 8px #ffff;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+button:hover {
+    box-shadow: inset 5px 5px 8px #0000004b,
+        inset -5px -5px 8px #fff;
+    background: #fff;
+}
+
+#input-box {
+    margin-bottom: 30px;
+    width: 492px;
+    height: 70px;
+    font-size: 45px;
+    text-align: right;
+    padding: 12px;
+    background: #ecf0f3;
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 10px #bdc2c7,
+        inset -8px -8px 10px #fff;
+}
+
+#eval {
+    background: #25bdf0;
+    color: #fff;
+    box-shadow: inset 5px 5px 8px #66d9ff,
+        inset -5px -5px 8px #08a8dd;
+}
+
+#eval:hover {
+    box-shadow: inset 5px 5px 8px #00ace6,
+        inset -5px -5px 8px #00ace6;
+}
+
+#ac {
+    background: #34f034;
+    color: #fff;
+
+}
+
+#ac:hover {
+    box-shadow: inset 5px 5px 8px #36df36,
+        inset -5px -5px 8px #4df74d;
+}
+
+#ce {
+    background: #e629ff;
+    color: #fff;
+}
+
+#ce:hover {
+    box-shadow: inset 5px 5px 8px #cb00e6,
+        inset -5px -5px 8px #ff33d3;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 616px) {
+    .container {
+        padding: 20px;
+    }
+
+    #input-box {
+        width: 430px;
+        height: 60px;
+        font-size: 30px;
+        text-align: right;
+        padding: 10px;
+    }
+    button {
+        margin: 4px;
+        width: 60px;
+        height: 33px;
+        font-size: 14px;
+    }
+
+}
+@media only screen and (max-width: 505px){
+    .container {
+        padding: 19px;
+    }
+
+    #input-box {
+        width: 320px;
+        height: 50px;
+        font-size: 20px;
+    }
+    button {
+        margin: 4px;
+        width: 42px;
+        height: 20px;
+        font-size: 11px;
+    }
+
+}
+@media only screen and (max-width: 397px){
+    .container {
+        padding: 18px;
+    }
+
+    #input-box {
+        width: 280px;
+        height: 45px;
+        font-size: 18px;
+    }
+    button {
+        margin: 4px;
+        width: 35px;
+        height: 17px;
+        font-size: 10px;
+    }
+
+}
